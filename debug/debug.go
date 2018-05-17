@@ -22,7 +22,7 @@ const (
 	PrintColorReset   PrintColor = "\x1b[0m"
 )
 
-var choicedColor = PrintColorYellow
+var chosenColor = PrintColorYellow
 
 // Print prints a message with a file name and a line number.
 // It works like fmt.Print.
@@ -78,11 +78,11 @@ func Printf(format string, args ...interface{}) {
 
 // SetPrintColor set color on console message
 func SetPrintColor(colorName PrintColor) {
-	choicedColor = colorName
+	chosenColor = colorName
 }
 
 func printf(msg string) {
-	fmt.Printf("%s%s%s", choicedColor, msg, PrintColorReset)
+	fmt.Printf("%s%s%s", chosenColor, msg, PrintColorReset)
 }
 
 func printWithFileLine(file string, line int, msg string) {
