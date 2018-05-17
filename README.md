@@ -4,7 +4,7 @@ Easy print debugging.
 
 # feature
 
-Print the string to standartd output with the file name and line number where the method was called.
+It outputs a string with the file name and line number to which the function was called.
 
 
 # func Print
@@ -22,7 +22,7 @@ It works like fmt.Print.
 debug.Println("hoge") // => name.go:17 hoge
 ```
 Println prints a message with a file name and a line number.
-It works like fmt.Print.
+It works like fmt.Println.
 
 # func Printf
 
